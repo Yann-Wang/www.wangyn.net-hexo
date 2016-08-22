@@ -25,33 +25,26 @@ gulp.task("html",["clean"],function() {
     .pipe(gulp.dest("./dst/"));
 });
 
-gulp.task("default",["css","js","html"],function() {
-    console.log("gulp minify finished.");
+gulp.task("updatePublicDir",["css","js","html"],function() {
+    //console.log("gulp minify finished.");
 
-    gulp.src("./dst")
-    .pipe(plugins.shell([
+    gulp.src("./dst").pipe(plugins.shell([
         "cp -r ./dst/* ./public/"
-    ]))
-    .pipe(plugins.shell(["rm  -rf ./dst"]));
+    ])).pipe(plugins.shell([
+        "rm  -rf ./dst"
+    ]));
 
-    console.log("gulp remove ./dst");
+    //console.log("gulp remove ./dst");
 
 });
 
+// The default task (called when you run `gulp` from cli)
 
+gulp.task("default",["updatePublicDir"],function () {
 
-/*
-gulp.task("watch",function() {
-    gulp.watch("public/*",["default"]);
-});
-
-
-gulp.task("mv",function() {
-    return gulp.src("./dst/*")
-    .pipe(plugins.shell([
-        "cp -r ./dst/* ./public/"
+    gulp.src("./public").pipe(plugins.shell([
+        "cp -r ./public /home/spray/www.wangyn.net-node/"
     ]));
 });
 
- */
-
+//shell命令中　cp : 如果目标路径中有要复制的文件或文件夹，则直接覆盖它
