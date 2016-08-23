@@ -1,7 +1,7 @@
 ---
 title: 跨域请求技术
 categories:
-- 技术
+- technology
 tags:
 - cross origin
 - CORS

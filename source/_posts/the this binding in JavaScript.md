@@ -2,7 +2,7 @@
 title: javascript 中的 this 绑定
 date: 2016-06-03 
 categories:
-- 技术
+- technology
 tags:
 - this
 - bind

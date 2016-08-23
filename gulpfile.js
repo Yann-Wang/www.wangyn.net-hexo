@@ -38,12 +38,19 @@ gulp.task("updatePublicDir",["css","js","html"],function() {
 
 });
 
+
+gulp.task("removePublicDir", ["updatePublicDir"], function () {
+    gulp.src("../www.wangyn.net-node/public").pipe(plugins.shell([
+        "rm -rf ../www.wangyn.net-node/public"
+    ]))
+})
+
 // The default task (called when you run `gulp` from cli)
 
-gulp.task("default",["updatePublicDir"],function () {
+gulp.task("default",["removePublicDir"],function () {
 
     gulp.src("./public").pipe(plugins.shell([
-        "cp -r ./public /home/spray/www.wangyn.net-node/"
+        "cp -r ./public ../www.wangyn.net-node/"
     ]));
 });
 
