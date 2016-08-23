@@ -2,7 +2,7 @@
 
 - combine with [www.wangyn.net-node](https://github.com/Yann-Wang/www.wangyn.net-node) project, copy the public directory of hexo project to the public directory of node project. 
 
-- use [hexo](https://hexo.io/) blog framework with the ["next"](https://github.com/iissnan/hexo-theme-next) theme to generate the static files.
+- use [hexo](https://hexo.io/) blog framework with the ["Hacker"](https://github.com/CodeDaraW/Hacker) theme to generate the static files.
 
 - includes my modification about the template.
 
