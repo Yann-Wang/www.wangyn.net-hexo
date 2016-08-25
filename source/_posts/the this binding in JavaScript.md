@@ -1,18 +1,16 @@
 ---
-title: javascript 中的 this 绑定
-date: 2016-06-03 
+title: JavaScript中的this绑定
+date: 2016-06-03 11:44:51
 categories:
 - technology
 tags:
 - this
 - bind
-- javascirpt
+
 ---
 
-## javascript 中的 this 绑定 
 
 ### 默认绑定：
-
 - non-strict mode ： this 指向全局对象；
 - strict mode          :  this 绑定 undefined
   注：决定this绑定对象的并不是调用位置是否处于严格模式，而是函数体是否处于严格模式。

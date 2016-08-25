@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var gulpLoadPlugins= require('gulp-load-plugins');
 var plugins = gulpLoadPlugins();
+var shell = require('gulp-shell');
 
 gulp.task("clean",function() {
     return gulp.src("./dst/*")
@@ -38,20 +39,11 @@ gulp.task("updatePublicDir",["css","js","html"],function() {
 
 });
 
-
-gulp.task("removePublicDir", ["updatePublicDir"], function () {
-    gulp.src("../www.wangyn.net-node/public").pipe(plugins.shell([
-        "rm -rf ../www.wangyn.net-node/public"
-    ]))
-})
-
 // The default task (called when you run `gulp` from cli)
 
-gulp.task("default",["removePublicDir"],function () {
-
-    gulp.src("./public").pipe(plugins.shell([
-        "cp -r ./public ../www.wangyn.net-node/"
-    ]));
-});
+gulp.task('default', ["updatePublicDir"], shell.task([
+    'rm -rf ../www.wangyn.net-node/public',
+    'cp -r ./public ../www.wangyn.net-node/'
+]));
 
 //shell命令中　cp : 如果目标路径中有要复制的文件或文件夹，则直接覆盖它
