@@ -26,7 +26,7 @@ gulp.task("html",["clean"],function() {
     .pipe(gulp.dest("./dst/"));
 });
 
-gulp.task("updatePublicDir",["css","js","html"],function() {
+gulp.task("default",["css","js","html"],function() {
     //console.log("gulp minify finished.");
 
     gulp.src("./dst").pipe(plugins.shell([
@@ -40,10 +40,10 @@ gulp.task("updatePublicDir",["css","js","html"],function() {
 });
 
 // The default task (called when you run `gulp` from cli)
-
+/*
 gulp.task('default', ["updatePublicDir"], shell.task([
     'rm -rf ../www.wangyn.net-node/public',
     'cp -r ./public ../www.wangyn.net-node/'
 ]));
-
+*/
 //shell命令中　cp : 如果目标路径中有要复制的文件或文件夹，则直接覆盖它
