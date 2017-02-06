@@ -1,0 +1,20 @@
+menu:
+  Home: /
+  Archives: /archives
+
+# duoshuo comment
+duoshuo: true
+duoshuo_name: Yann-Wang
+
+duoshuo_info:
+  ua_enable: true
+  admin_enable: true
+  user_id: 6291864925467854000
+  admin_nickname: 主编大人
+
+# disqus comment
+disqus: false
+disqus_shortname: 
+
+# google analytics
+googleTrackId: 
