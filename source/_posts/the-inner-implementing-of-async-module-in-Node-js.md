@@ -12,11 +12,14 @@ tags:
 ### Async.js中的.each和.eachSeries
 - .each 并不是真正的并行，而是.each中的函数有异步回调，.each不能保证每次调用异步回调都是按先后顺序调用的。也就是说，并行的是回调函数（此处的并行，并不是系统层面的并行）。
 - .each实现思路：顺序遍历执行数组中的函数，声明一个变量count=0，在每个callback函数中 将count++，然后判断count 是否与数组.length相等，如果等，就调用最后的callback。
+
+<!-- more -->
+
 - .eachSeries实现思路：在前一个的callback函数中调用后一个函数。
 - async.series也是根据.eachSeries来实现的。
 
 - [Async.js v1.5.2版本](https://github.com/caolan/async/blob/v1.5.2/lib/async.js)
-<!-- more -->
+
 ### async.each 和 async.eachSeries 的实现
 
 {% codeblock lang:javascript %}

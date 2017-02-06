@@ -14,6 +14,9 @@ tags:
 
 - Object.prototype < EventTarget.prototype < Node.prototype < Element.prototype          < HTMLElement.prototype < HTMLAnchorElement.prototype
 - Object.prototype < EventTarget.prototype < Node.prototype < Attr.prototype
+
+<!-- more -->
+
 - Object.prototype < EventTarget.prototype < Node.prototype < CharacterData.prototype    < Text.prototype
 - Object.prototype < EventTarget.prototype < Node.prototype < CharacterData.prototype    < Comment.prototype
 - Object.prototype < EventTarget.prototype < Node.prototype < Document.prototype         < HTMLDocument.prototype
@@ -22,7 +25,6 @@ tags:
 - Object.prototype < NodeList.prototype
 - Object.prototype < HTMLCollection.prototype
 
-<!-- more -->
 
 代码验证
 

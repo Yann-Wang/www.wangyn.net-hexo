@@ -17,6 +17,8 @@ tags:
 
 2. 图像Ping------**动态生成img标签**
 
+<!-- more -->
+
 3. JSONP------**动态生成script标签**
 
 4. Comet `['kɒmɪt]`------**长链接   http 流**
@@ -25,7 +27,6 @@ tags:
 
 6. Web Socket------**WebSocket 对象**
 
-<!-- more -->
 
 #### 前后端代码实现
 - 请访问我的 [github](https://github.com/Yann-Wang/cross-origin-request-technology)

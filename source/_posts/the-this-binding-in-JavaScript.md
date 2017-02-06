@@ -15,10 +15,12 @@ tags:
 - strict mode          :  this 绑定 undefined
   注：决定this绑定对象的并不是调用位置是否处于严格模式，而是函数体是否处于严格模式。
 
+<!-- more -->
+
 ### 软绑定
 - 给默认绑定指定一个全局对象和undefined以外的值，可以实现和硬绑定相同的效果，同时保留隐式绑定或者显式绑定修改this的能力。
 - 对指定的函数进行封装，首先检查调用时的this，如果this绑定到全局对象或者undefined， 那就把指定的默认对象obj绑定到this， 否则不会修改this。
-<!-- more -->
+
 
     ```javascript
      if (!Function.prototype.softBind){

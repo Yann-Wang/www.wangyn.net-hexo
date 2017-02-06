@@ -12,6 +12,8 @@ tags:
 
 - 本文来自w3c官方网站对　ES5标准文档[［可执行代码与执行环境］](https://www.w3.org/html/ig/zh/wiki/ES5/execution)　一文的部分引用
 
+<!-- more -->
+
 ### v8解析［function调用］时做了什么
 
 - 进入函数代码
@@ -27,7 +29,7 @@ tags:
     7. 设 变量环境组件 为 localEnv。  
     8. 令 code 为 F 的 [[Code]] 内部属性的值。  
     9. 按 10.5 描述的方案，使用函数代码 code 和 argumentList 执行声明式绑定初始化化步骤。
-    <!-- more -->
+    
 - NewDeclarativeEnvironment(E)
 
     当调用 NewDeclarativeEnvironment 抽象运算时，需指定一个词法环境 E，其值可以为 null，此时按以下步骤进行：

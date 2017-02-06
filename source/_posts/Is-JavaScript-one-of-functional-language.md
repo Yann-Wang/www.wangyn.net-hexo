@@ -12,6 +12,8 @@ tags:
 - javascript 属于没有明确归类的语言，或者好听点叫“多范式语言”。
 - 你可以用原型继承模拟一套面向对象的体系，也可以强迫自己写函数式的 javascript（因为函数在 js 里是一等公民），也可以怎么舒服怎么写。
 
+<!-- more -->
+
 #### javascript语言继承的函数式语言的特点
 - 高阶函数（Higher-order function）
     - 函数参数和函数返回值都可以是函数
@@ -21,7 +23,7 @@ tags:
     - 但JavaScript提供了一些非常有用的函数，像Function.prototype.call, Function.prototype.bind, 和与众不同的 arguments 对象。能够利用这些函数实现一些强大的函数式编程所约定的。（像柯里化）
 - 闭包（closure）
     - 闭包的基础：函数是一等公民（First-class function）
-<!-- more -->
+
 #### javascript语言不包括的函数式语言的特点
 - 惰性求值
 - 内建的数据不变性

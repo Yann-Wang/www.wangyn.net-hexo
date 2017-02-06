@@ -21,15 +21,19 @@ article
     margin-left -75px
 
   blockquote
-    margin 6rem 2rem
+    margin 1rem 2rem
     padding-left 15px
     line-height 2rem
     border-left 4px solid $hackerRed
+    p
+      margin 1rem 0
 
   .article-title
     position relative
     color $articleTitleColor
     font-size 2.4rem
+    font-weight normal
+    font-family  "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif
     line-height 1.3
     text-align center
     margin 0
@@ -70,7 +74,7 @@ article
         font-style italic
 
   .article-excerpt, .article-content, .featured-media
-    margin 4rem 0
+    margin-top 2rem
     font-size 1.6rem
     color $articleTextColor
 
@@ -78,6 +82,20 @@ article
       max-width: 100%
       height auto
       margin 1rem auto
+
+  .read-more
+    text-align center
+    height 2.6rem
+    margin-bottom 1.5rem
+    .read-link
+      font 1.5rem/2.6rem sans-serif
+      vertical-align middle
+      padding 0.3rem 1.2rem
+      border 0.1rem solid red
+    .read-link:hover
+      background red
+      color white
+
 
   .article-footer
     .pull-left

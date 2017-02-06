@@ -12,9 +12,11 @@ tags:
 
 #### 作用域(Scope)
 > From wikipedia: In computer programming, the scope of a name binding – an association of a name to an entity, such as a variable – is the part of a computer program where the binding is valid: where the name can be used to refer to the entity. In other parts of the program the name may refer to a different entity (it may have a different binding), or to nothing at all (it may be unbound).
- 
+
 - 在程序的某个节点上的作用域指的是，该代码节点能够阅读到的所有实体(entity)，也被称为上下文或者执行环境。（注：entity简单来讲就是由标识符代表的代码和变量）
+
 <!-- more -->
+
 #### 作用域的表现形式
 - 以上我们提到作用域的讨论依赖具体的程序节点，这个程序节点可以细分为如下两块。
     - 源代码的文本片段(area of text)

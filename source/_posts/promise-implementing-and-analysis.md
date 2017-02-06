@@ -11,10 +11,13 @@ tags:
 
 - 首先，先去[Promise官网](https://www.promisejs.org/implementing/)看implementing这篇文章．
 
-<!-- more -->
+
 
 - 下面是我对源码的一个解读
-    {% jsfiddle 01duqtsu js,html,result %}
+
+<!-- more -->
+
+{% jsfiddle 01duqtsu js,html,result %}
 
 - 在执行代码是为了避免使用Node中已经实现的Promise，所以将Promise改名为Promise2，　并且把测试环境设为了浏览器中．在上面的代码中，把Promise的实现部分放在了javascript文件中，并在html文件的head中引入； 对promise的使用放在了html文件的script标签中．
 
