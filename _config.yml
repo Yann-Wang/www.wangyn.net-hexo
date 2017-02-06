@@ -12,7 +12,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://www.wangyn.net/
+url: http://wangyn.net/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -63,22 +63,22 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: Hacker
+theme: hacker
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 
 deploy:
-  #type: git
-  #repo: git@github.com:Yann-Wang/www.wangyn.net-hexo.git
-  #branch: master
-  #message: from hexo
-  type: rsync
-  host: 45.32.251.237
-  user: spray
-  root: /home/spray/staticServer/public # 远程主机的根目录
-  port: 22 # Default is 22
-  delete: true # 删除远程主机上的旧文件
+  type: git
+  repo: git@github.com:Yann-Wang/www.wangyn.net-hexo.git
+  branch: master
+  message: from hexo
+  #type: rsync
+  #host: 45.32.251.237
+  #user: spray
+  #root: /home/spray/staticServer/public # 远程主机的根目录
+  #port: 22 # Default is 22
+  #delete: true # 删除远程主机上的旧文件
   #args:
   verbose: true # Default is true
   ignore_errors: false # Default is false

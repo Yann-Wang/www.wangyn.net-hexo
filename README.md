@@ -13,6 +13,7 @@
 ```shell
 npm install hexo-cli -g
 npm install
+# 将主题包copy到themes文件夹下  https://github.com/CodeDaraW/Hacker
 hexo clean  # 清除缓存文件 (db.json) 和已生成的静态文件 (public)
 hexo generate | hexo g # 生成静态文件
 gulp   # 压缩静态文件（html, css, js），将压缩后静态文件保存在public文件夹， 删除中间状态dst文件夹,
